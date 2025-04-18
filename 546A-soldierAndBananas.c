@@ -8,8 +8,10 @@ int main()
     scanf("%d %d %d", &initialDollars, &totalDollars, &numberOfBananas);
     for (int i = 1; i <= numberOfBananas; i++)
     {
+        // calculate total cost for bananas
         cost += initialDollars * i;
     }
+    // calculate borrow amount
     borrow = cost - totalDollars;
     if (borrow > 0)
     {
