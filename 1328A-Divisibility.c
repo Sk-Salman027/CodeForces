@@ -1,5 +1,17 @@
 #include <stdio.h>
+/*
+Explanation:
+We use long long for a and b because values can go up to 1e9.
 
+For each test case:
+
+Compute a % b.
+
+If remainder is 0 → a is divisible by b → print 0.
+
+Otherwise, print b - (a % b) to get the minimal number of increments required.
+
+*/
 int main()
 {
     int n;
@@ -16,7 +28,7 @@ int main()
         {
             printf("%d\n", b - (a % b));
         }
-        }
+    }
 
     return 0;
 }
